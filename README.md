@@ -4,12 +4,10 @@
 [![codecov.io](https://codecov.io/github/PiotrBerebecki/javascript-app-starter-kit/coverage.svg?branch=master)](https://codecov.io/github/PiotrBerebecki/javascript-app-starter-kit?branch=master)
 
 
-Upload Code Coverage reports to codecov.io
-```sh
-& bash <(curl -s https://codecov.io/bash) -t `ENTER CODECOV.IO REPO TOKEN`
-```
+Code coverage is setup via npm script and integrated into `.travis.yml` file
 
+
+Start the app in the silet mode
 ```sh
-# Start app in silent mode
 $ npm start -s
 ```

@@ -6,9 +6,16 @@ import numeral from 'numeral';
 const courseValue = numeral(1000).format('£1,0.00');
 console.log(`I would pay ${courseValue} for this awesome course`);
 
-function add(a, b) {
-  return 2;
+export function add(a, b) {
+  if (b === 10) {
+    return 100;
+  }
+  return a + b;
 }
 
-
-module.exports = add;
+export function multi(a, b) {
+  if (b === 10) {
+    return 100;
+  }
+  return a * b;
+}

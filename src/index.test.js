@@ -2,9 +2,19 @@ import {expect} from 'chai';
 import jsdom from 'jsdom';
 import fs from 'fs';
 
-import add from './index';
+import {add, multi} from './index';
 
+describe('Our first test', () => {
+  it('should pass', () => {
+    expect(add(2,3)).to.equal(5);
+  });
+});
 
+describe('Our first test', () => {
+  it('should pass', () => {
+    expect(multi(2,3)).to.equal(6);
+  });
+});
 
 describe('Our first test', () => {
   it('should pass', () => {
