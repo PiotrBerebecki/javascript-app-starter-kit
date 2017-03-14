@@ -2,6 +2,9 @@
 node_modules
 jspm_packages
 
+# Prod build
+dist
+
 # Logs
 logs
 *.log
@@ -40,8 +43,5 @@ build/Release
 #Webstorm
 .idea
 
-#prod build
-dist
-
-#mock db
+# Mock db
 db.json
