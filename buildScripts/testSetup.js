@@ -6,3 +6,8 @@ require('babel-register')();
 // Disable webpack features that Mocha doesn't understand.
 // Treat them as empty function
 require.extensions['.css'] = function() {};
+
+
+function add(a, b) {
+  return 2;
+}

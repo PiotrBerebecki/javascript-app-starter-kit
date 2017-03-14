@@ -15,7 +15,8 @@
     "security-check": "nsp check",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel open:src localtunnel",
-    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\""
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha buildScripts/testSetup.js -- -R spec \"src/**/*.test.js\""
   },
   "author": "Piotr Berebecki",
   "license": "MIT",
@@ -41,6 +42,7 @@
     "express": "4.14.0",
     "extract-text-webpack-plugin": "1.0.1",
     "html-webpack-plugin": "2.22.0",
+    "istanbul": "^0.4.5",
     "jsdom": "9.8.0",
     "json-schema-faker": "0.3.6",
     "json-server": "0.8.22",
