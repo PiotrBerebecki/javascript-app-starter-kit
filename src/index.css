@@ -1,3 +1,7 @@
 body {
-  color: teal;
+  font-family: Sans-Serif;
+}
+
+table th {
+  padding: 5px
 }
