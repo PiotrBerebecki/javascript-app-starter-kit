@@ -4,6 +4,16 @@
 [![codecov.io](https://codecov.io/github/PiotrBerebecki/javascript-app-starter-kit/coverage.svg?branch=master)](https://codecov.io/github/PiotrBerebecki/javascript-app-starter-kit?branch=master)
 
 
+## Sharing work in progress
+
+```sh
+# share you on a random localtunnel url, e.g. https://kjsjsqbg.localtunnel.me/
+$ npm run share
+
+# add specific domain e.g. https://cool-app.localtunnel.me/
+$ npm run share --subdomain cool-app
+```
+
 ## Continuous Integration
 
 Currently handled on Travis CI.

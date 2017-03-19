@@ -4,6 +4,7 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import WebpackMd5Hash from 'webpack-md5-hash';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import autoprefixer from 'autoprefixer';
 
 export default {
   debug: true,
@@ -66,7 +67,10 @@ export default {
   module: {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loaders: ['babel']},
-      {test: /\.css$/, loader: ExtractTextPlugin.extract('css?sourceMap')}
+      {test: /\.css$/, loader: ExtractTextPlugin.extract('css?sourceMap!postcss-loader')}
     ]
+  },
+  postcss: () => {
+    return [autoprefixer];
   }
 };
